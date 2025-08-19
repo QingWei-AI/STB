@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack Thread Base (SLB) - Solution Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Slack Thread Base (SLB)</h1>
+            <p class="subtitle">Transforming Slack conversations into a searchable knowledge base</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p>In modern workplaces Slack is the primary hub for real‑time collaboration.<br>
+            Threads, in particular, often become the <strong>de facto source of truth</strong> for decisions, troubleshooting steps, and project details.<br>
+            However, not every thread deserves to be treated as a permanent reference.<br>
+            The participants of a thread are usually the best judges of its lasting value—they can intuit whether the discussion should be kept for future queries or discarded as transient chatter.</p>
+        </section>
+
+        <section class="challenge">
+            <h2>The Challenge</h2>
+            <ul>
+                <li><strong>Signal vs. noise:</strong> Valuable insights are buried among countless routine conversations.</li>
+                <li><strong>Retrieval overhead:</strong> Finding the right thread later can require scrolling through long histories.</li>
+                <li><strong>Knowledge decay:</strong> Threads evolve; without a systematic way to capture updates, important information is lost.</li>
+            </ul>
+        </section>
+
+        <section class="solution">
+            <h2>Our Solution: Slack Thread Base (SLB)</h2>
+            <p>To help teams <strong>capture, curate, and reuse</strong> the most useful Slack threads, we built <strong>Slack Thread Base (SLB)</strong>—a lightweight Slack app that turns selected conversations into a searchable knowledge base.</p>
+        </section>
+
+        <section class="commands">
+            <h2>Core Commands</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Purpose</th>
+                        <th>Key Benefit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/stb-summary</code></td>
+                        <td>Generates a concise summary of a long thread.</td>
+                        <td>Quickly grasp context without reading every message.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/stb-save &lt;thread‑link&gt;</code></td>
+                        <td>Processes and stores the thread in the Thread‑Base. Each thread can be saved only once by any authorized user, preventing duplicate entries.</td>
+                        <td>Creates a curated, deduplicated repository of high‑value information.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/stb-ask &lt;question&gt;</code></td>
+                        <td>Answers a free‑text query using the content stored in the Thread‑Base, and appends a link to the original Slack thread for verification.</td>
+                        <td>Provides instant, reference‑backed answers while preserving provenance.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/stb-maintain</code></td>
+                        <td>Shows the list of threads saved by the invoking user, allowing removal or updating when the original thread changes.</td>
+                        <td>Keeps the knowledge base current and relevant.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="why-it-works">
+            <h2>Why SLB Works</h2>
+            <ol>
+                <li><strong>Selective Preservation</strong> – Users decide which threads merit preservation, ensuring only high‑quality knowledge is stored.</li>
+                <li><strong>Instant Summaries</strong> – Summaries cut down on time spent re‑reading lengthy discussions.</li>
+                <li><strong>Context‑Rich Answers</strong> – Queries are answered with direct references, so users can always verify the source.</li>
+                <li><strong>Ongoing Maintenance</strong> – Updated threads can be refreshed, and obsolete entries can be removed, preventing knowledge rot.</li>
+            </ol>
+            <p>By integrating SLB into your Slack workspace, you transform ad‑hoc conversations into a <strong>living, searchable knowledge base</strong> that empowers every team member to find reliable answers fast, without sifting through endless chat history.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contact: <a href="mailto:qingwei-ai@proton.me">qingwei-ai@proton.me</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
